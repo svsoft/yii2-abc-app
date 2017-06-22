@@ -1,23 +1,10 @@
 <?php
 
-$config =  [
-    'components' => [
-        'sphinx' => [
-            'class' => 'yii\sphinx\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;port=9306;',
-            'username' => '',
-            'password' => '',
-        ],
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;dbname=dblilide',
-            'username' => 'userlilide',
-            'password' => 'M9duwzhwq',
-            'charset' => 'utf8',
-            'enableSchemaCache'=>true,
-        ],
-    ],
-];
+/**
+ * File has config for only console application and Production environment
+ */
+
+$config =  [];
 
 $config['bootstrap'][] = 'gii';
 $config['modules']['gii'] = [

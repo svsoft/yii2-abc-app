@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * File has config for all applications (console, web) and Production environment
+ */
+
 $config =  [
     'components' => [
         'sphinx' => [
@@ -15,10 +19,6 @@ $config =  [
             'password' => 'password',
             'charset' => 'utf8',
             'enableSchemaCache'=>true,
-        ],
-        'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'PEdxvZnllCXTHXFZ4orkBrX8fc1tzqxW',
         ],
     ],
 ];

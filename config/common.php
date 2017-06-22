@@ -1,28 +1,16 @@
 <?php
 
-$params = array_merge(
-    require(__DIR__ . '/params.php'),
-    require(__DIR__ . '/params-local.php')
-);
+/**
+ * File has config for all applications (console, web) and all environments
+ */
 
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
-        'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'gtYeNxbo93zLWrAthy3SvQjiLfWEpDAR',
-        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
-        ],
-        'user' => [
-            'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
-        ],
-        'errorHandler' => [
-            'errorAction' => 'site/error',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -40,15 +28,10 @@ $config = [
                 ],
             ],
         ],
-        'db' => require(__DIR__ . '/db.php'),
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
     ],
-    'params' => $params,
+    'params' => [
+        'adminEmail' => 'admin@example.com',
+    ],
 ];
 
 return $config;
