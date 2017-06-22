@@ -1,7 +1,7 @@
 {
     "name": "svsoft/yii2-base-app",
-    "description": "Yii 2 Project Template based on yii2-app-basic",
-    "keywords": ["yii2", "framework", "basic", "project template"],
+    "description": "Yii 2 Base Application based on yiisoft/yii2-app-basic",
+    "keywords": ["yii2", "framework", "project template"],
     "type": "project",
     "license": "MIT License",
     "support": {
@@ -38,18 +38,6 @@
         ]
     },
     "extra": {
-        "yii\\composer\\Installer::postCreateProject": {
-            "setPermission": [
-                {
-                    "runtime": "0777",
-                    "web/assets": "0777",
-                    "yii": "0755"
-                }
-            ],
-            "generateCookieValidationKey": [
-                "config/web.php"
-            ]
-        },
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
