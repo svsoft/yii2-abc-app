@@ -1,5 +1,5 @@
 {
-    "name": "svsoft/yii2-base-app",
+    "name": "svsoft/yii2-abc-app",
     "description": "Yii 2 Base Application based on yiisoft/yii2-app-basic",
     "keywords": ["yii2", "framework", "project template"],
     "type": "project",
