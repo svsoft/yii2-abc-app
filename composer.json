@@ -1,6 +1,6 @@
 {
-    "name": "svsoft/yii2-basic-app",
-    "description": "Yii 2 Basic Project Template",
+    "name": "svsoft/yii2-base-app",
+    "description": "Yii 2 Project Template based on yii2-app-basic",
     "keywords": ["yii2", "framework", "basic", "project template"],
     "type": "project",
     "license": "MIT License",
