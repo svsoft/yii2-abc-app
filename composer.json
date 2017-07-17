@@ -6,6 +6,7 @@
     "license": "MIT License",
     "support": {
     },
+    "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
