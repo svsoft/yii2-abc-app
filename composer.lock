@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a964e8f8a6490f477a3649b817dd95b7",
+    "content-hash": "b52de1628c581f543b45285dfb3fb585",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -266,6 +266,51 @@
                 "markdown-extra"
             ],
             "time": "2016-09-14T20:40:20+00:00"
+        },
+        {
+            "name": "demi/backup",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/demisang/yii2-backup.git",
+                "reference": "19aefcab07e6d8082f3da6b0a76c675ffb455f75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/demisang/yii2-backup/zipball/19aefcab07e6d8082f3da6b0a76c675ffb455f75",
+                "reference": "19aefcab07e6d8082f3da6b0a76c675ffb455f75",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "demi\\backup\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Orlov",
+                    "email": "orlov_mail@mail.ru",
+                    "homepage": "https://orlov.io/",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Basic Yii2 site backup methods",
+            "homepage": "https://github.com/demisang/yii2-backup#readme",
+            "keywords": [
+                "backup",
+                "dump",
+                "yii2"
+            ],
+            "time": "2015-11-08T05:48:27+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -3084,7 +3129,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.4.0"
