@@ -18,4 +18,4 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../config/web-local.php'));
 
 
-(new yii\web\Application($config))->run();
+(new YiiWebApplication($config))->run();

@@ -34,8 +34,6 @@ Yii::$container = new yii\di\Container();
  * Class WebApplication
  * Include only Web application related components here
  *
- * @property app\components\breadcrumbs $breadcrumbs
- * @property svsoft\yii\components\image $image
  */
 class YiiWebApplication extends \yii\web\Application
 {
