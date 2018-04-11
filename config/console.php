@@ -7,6 +7,7 @@
 $config = [
     'id' => 'basic-console',
     'controllerNamespace' => 'app\commands',
+    'defaultRoute' =>'help',
 ];
 
 return $config;
