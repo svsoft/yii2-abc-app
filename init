@@ -77,7 +77,7 @@ foreach ($files as $file) {
     }
 }
 
-$callbacks = ['setCookieValidationKey', 'setWritable', 'setExecutable', 'createSymlink'];
+$callbacks = ['setCookieValidationKey', 'createDirectory', 'setWritable', 'setExecutable', 'createSymlink'];
 foreach ($callbacks as $callback) {
     if (!empty($env[$callback])) {
         $callback($root, $env[$callback]);
@@ -170,14 +170,41 @@ function getParams()
     return $params;
 }
 
+function createDirectory($root, $paths)
+{
+    foreach ($paths as $writable) {
+
+        $path = "$root/$writable";
+
+        if (is_dir($path))
+        {
+            echo "Directory {$writable} already created. \n";
+        }
+        else
+        {
+            if (file_exists($path))
+                echo "\n  Error. Create directory {$writable}. \n";
+            if (mkdir($path))
+                echo "Directory {$writable} created. \n";
+            else
+                echo "\n  Error. Create directory {$writable}. \n";
+        }
+    }
+}
+
 function setWritable($root, $paths)
 {
     foreach ($paths as $writable) {
-        if (is_dir("$root/$writable")) {
-            echo "      chmod 0777 $writable\n";
-            @chmod("$root/$writable", 0777);
-        } else {
+
+        $path = "$root/$writable";
+        if (!is_dir($path))
+        {
             echo "\n  Error. Directory $writable does not exist. \n";
+        }
+        else
+        {
+            echo "      chmod 0777 $writable\n";
+            @chmod($path, 0777);
         }
     }
 }

@@ -31,6 +31,10 @@
 return [
     'Development' => [
         'path' => 'dev',
+        'createDirectory' => [
+            'runtime',
+            'web/assets',
+        ],
         'setWritable' => [
             'runtime',
             'web/assets',
@@ -45,6 +49,10 @@ return [
     ],
     'Production' => [
         'path' => 'prod',
+        'createDirectory' => [
+            'runtime',
+            'web/assets',
+        ],
         'setWritable' => [
             'runtime',
             'web/assets',
