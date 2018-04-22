@@ -3,7 +3,7 @@
     "description": "Yii 2 ABC Application based on yiisoft/yii2-app-basic",
     "keywords": ["yii2", "framework", "project template"],
     "type": "project",
-    "license": "MIT License",
+    "license": "MIT",
     "support": {
     },
     "prefer-stable": true,
