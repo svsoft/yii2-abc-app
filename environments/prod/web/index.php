@@ -1,7 +1,4 @@
 <?php
-if (!empty($_SERVER['HTTP_HOST']))
-    $_SERVER['HTTP_HOST'] = str_replace(':80', '', $_SERVER['HTTP_HOST']);
-
 // comment out the following two lines when deployed to production
 defined('YII_DEBUG') or define('YII_DEBUG', false);
 defined('YII_ENV') or define('YII_ENV', 'prod');
