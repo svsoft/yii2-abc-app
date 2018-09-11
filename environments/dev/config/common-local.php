@@ -18,7 +18,7 @@ $config =  [
             'username' => 'user',
             'password' => 'password',
             'charset' => 'utf8',
-            'enableSchemaCache'=>true,
+            'enableSchemaCache'=>false,
         ],
     ],
 ];
