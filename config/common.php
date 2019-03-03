@@ -28,18 +28,19 @@ $config = [
                 ],
             ],
         ],
-        'backup' => [
-            'class' => 'demi\backup\Component',
-            // The directory for storing backups files
-            'backupsFolder' => dirname(__DIR__).'/backups', // <project-root>/backups
-            // Directories that will be added to backup
-            'directories' => [
-                'uploads' => dirname(__DIR__).'/web/upload',
-            ],
-        ],
     ],
     'params' => [
         'adminEmail' => 'admin@example.com',
+    ],
+    'modules' => [
+        'backup' => [
+            'class'         => 'svsoft\yii\backup\BackupModule',
+            'backupsFolder' => dirname(__DIR__) . '/backups', // <project-root>/backups
+            // Directories that will be added to backup
+            'directories'   => [
+                'uploads' => dirname(__DIR__) . '/web/upload',
+            ],
+        ],
     ],
 ];
 
